@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>JoomberUI</name>
+	<creationDate>March, 2014</creationDate>
+	<author>David Childs</author>
+	<authorEmail>David@TheTemplateBlog.com</authorEmail>
+	<authorUrl>http://www.joomber.com</authorUrl>
+	<copyright>Copyright (C) 2014 David Childs | Joomber.com | All rights Reserved</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<version>1.0.0</version>	
+	<description>TPL_JOOMBERUI_DESCRIPTION</description>
+
+	<files>
+        <filename>index.php</filename>
+		<filename>framework.php</filename>
+        <filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>scss</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+	</files>
+
+	<positions>
+		<position>breadcrumbs</position>
+		<position>nav</position>
+		<position>top</position>
+		<position>above</position>
+		<position>above-content</position>
+		<position>left</position>
+		<position>right</position>
+		<position>below-content</position>
+		<position>below</position>
+		<position>footer</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_joomberui.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_joomberui.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/joomberui/" >
+				<field name="loadMoo" type="radio" class="btn-group" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
+					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
+					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
+				</field>
+				<field name="jQuery" type="radio" class="btn-group" default="1" label="TPL_SETTINGS_LOAD_JQUERY_LABEL" description="TPL_SETTINGS_LOAD_JQUERY_DESC">
+					<option value="1">TPL_SETTINGS_LOAD_JQUERY_YES</option>
+					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
+				</field>
+				<field name="jQueryOff" type="radio" class="btn-group" default="0" label="TPL_SETTINGS_LOAD_JQUERYOFF_LABEL" description="TPL_SETTINGS_LOAD_JQUERYOFF_DESC">
+					<option value="1">TPL_SETTINGS_LOAD_JQUERYOFF_YES</option>
+					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
+				</field>
+				<field name="noConflict" type="radio" class="btn-group" default="1" label="jQuery noConflict?" description="Force jQuery into noConflict Mode - note, it isn't proper noConflict mode. It just changes $ to jQuery">
+					<option value="1">TPL_SETTINGS_LOAD_JQUERYOFF_YES</option>
+					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
+				</field>
+				<field type="spacer" default=" " />	
+				<field type="spacer" default=" " />
+					<field name="setWidth" type="text" default="1024" label="TPL_SETTINGS_SETWIDTH_LABEL" description="TPL_SETTINGS_SETWIDTH_DESC" size="15" />
+					<field name="widthUnit" type="radio" class="btn-group" default="px" label="Set width in px or %" description="">
+					  <option value="px">1</option>
+					  <option value="%">2</option>
+					</field>
+				<field name="stickyTopMenu" type="radio" class="btn-group" default="0" label="Sticky Top Menu?" description="Keep the top menu visible while scrolling?">
+					<option value="1">TPL_SETTINGS_STICKYTOPMENU_YES</option>
+					<option value="0">TPL_SETTINGS_STICKYTOPMENU_NO</option>
+				</field>
+				<field type="spacer" default=" " />	
+				<field type="spacer" default=" " />
+					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
+					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
+					<field name="topbarTitle" type="text" default="joomberui" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
+					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomberui/css/" filter="" exclude="foundation\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
+					<field name="rightwidth" type="dropdown" class="btn-group" default="4" label="TPL_SETTINGS_RIGHTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">6</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</field>
+					<field name="leftwidth" type="dropdown" class="btn-group" default="4" label="TPL_SETTINGS_LEFTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" >
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">6</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</field>
+			</fieldset>			
+			<fieldset name="SOCIAL" label="TPL_SETTINGS_SOCIAL_LABEL">
+				<field name="twitter" type="text" default="" label="TPL_SETTINGS_TWITTER_LABEL" description="TPL_SETTINGS_TWITTER_DESC" />
+				<field name="twitterLink" type="text" default="" label="TPL_SETTINGS_TWITTER_LINK_LABEL" description="TPL_SETTINGS_TWITTER_LINK_DESC" filter="raw" />
+
+				<field name="dribbble" type="text" default="" label="TPL_SETTINGS_DRIBBBLE_LABEL" description="TPL_SETTINGS_DRIBBBLE_DESC" />
+				<field name="dribbbleLink" type="text" default="" label="TPL_SETTINGS_DRIBBBLE_LINK_LABEL" description="TPL_SETTINGS_DRIBBBLE_LINK_DESC" filter="raw" />
+
+				<field name="facebook" type="text" default="" label="TPL_SETTINGS_FACEBOOK_LABEL" description="TPL_SETTINGS_FACEBOOK_DESC" />
+				<field name="facebookLink" type="text" default="" label="TPL_SETTINGS_FACEBOOK_LINK_LABEL" description="TPL_SETTINGS_FACEBOOK_LINK_DESC" filter="raw" />
+
+				<field name="googleplus" type="text" default="" label="TPL_SETTINGS_GOOGLEPLUS_LABEL" description="TPL_SETTINGS_GOOGLEPLUS_DESC" />
+				<field name="googleplusLink" type="text" default="" label="TPL_SETTINGS_GOOGLEPLUS_LINK_LABEL" description="TPL_SETTINGS_GOOGLEPLUS_LINK_DESC" filter="raw" />
+
+				<field name="github" type="text" default="" label="TPL_SETTINGS_GITHUB_LABEL" description="TPL_SETTINGS_GITHUB_DESC" />
+				<field name="githubLink" type="text" default="" label="TPL_SETTINGS_GITHUB_LINK_LABEL" description="TPL_SETTINGS_GITHUB_LINK_DESC" filter="raw" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

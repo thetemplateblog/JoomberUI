@@ -1,0 +1,96 @@
+/* ==========================================================================
+    JOOMLA CONTENT
+   ========================================================================== */
+
+   ul.inline {
+	margin-bottom:5px;	
+}
+ul.inline li {
+	display:inline-block;
+	margin-right:3px;
+	padding-right:8px;
+	font-size:0.85em;
+	font-weight:lighter;
+	font-style:italic;
+	border-right: 1px solid #999;
+	line-height: 1;
+
+}
+ul.inline li:last-child {
+		border-right: none;
+
+}
+.actions {
+	float:right;	
+}
+ul.actions, ul.pager.pagenav {
+	list-style:none;
+	margin-left:0;	
+}
+ul.actions li {
+	display:inline;
+	margin-right:5px;
+}
+ul.actions li a{
+	display:inline-block;
+	zoom:1;
+	*display:inline;	
+	width:16px;
+	height:16px;
+	text-indent:-9999999px;
+}
+
+ul.actions li.print a {
+	background:url(../images/systemIcons/print.png) 0 0 no-repeat;
+}
+ul.actions li.email a {
+	background:url(../images/systemIcons/email.png) 0 0 no-repeat;
+}
+ul.actions li.edit a{
+	background:url(../images/systemIcons/edit.png) 0 0 no-repeat;
+}
+ul.pager.pagenav li {
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	margin-right:10px;
+}
+.pagination {
+  display: block;
+  height: auto;
+  margin-left: 0; 
+  margin-bottom:10px;
+  overflow:hidden;  
+  }
+  .pagination ul {
+	text-align:center;  
+  }
+  .pagination ul li {
+    display: block;
+    float: left;
+    height: auto;
+    color: #222222;
+    font-size: 0.875em;
+    margin-left: 0.3125em; }
+    .pagination ul li a {
+      display: block;
+      padding: 0.0625em 0.4375em 0.0625em;
+      color: #999999; }
+    .pagination ul li:hover a,
+    .pagination ul li a:focus {
+      background: #27AE60;
+	  color:white; }
+    .pagination ul li.unavailable a {
+      cursor: default;
+      color: #999999; }
+    .pagination ul li.unavailable:hover a, .pagination li.unavailable a:focus {
+      background: transparent; }
+    .pagination ul li.current a {
+      background: #27AE60;
+      color: white;
+      font-weight: bold;
+      cursor: default; }
+      .pagination ul li.current a:hover, .pagination li.current a:focus {
+        background: #27AE60; 
+		color:white;
+		}

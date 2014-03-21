@@ -1,0 +1,486 @@
+/* K2 Content
+---------------------------------------------------------------------------- */
+
+div.k2ItemsBlock ul {
+	margin: 0;
+	padding-left: 0;
+}
+div.k2ItemsBlock ul li {
+	list-style-type: none;
+	margin-bottom: 3em;
+}
+div.k2ItemsBlock ul li.lastItem {
+	margin-bottom: 1em;
+}
+div.k2ItemsBlock ul li a.moduleItemTitle {
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300!important;
+	font-size: 24.5px;
+}
+div.k2ItemsBlock ul li a.moduleItemAuthorAvatar img {
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+div.k2ItemsBlock ul li div.moduleItemAuthor  {
+	margin-top: 10px;
+}
+div.k2ItemsBlock ul li div.moduleItemIntrotext {
+	display: block;
+	padding: 0;
+	line-height: 150%;
+	margin-top: 20px;
+}
+div.k2ItemsBlock ul li span.moduleItemDateCreated {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 0.5em;
+}
+div.k2ItemsBlock ul li span.moduleItemDateCreated:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 12px;
+	content: "\f073";
+}
+div.k2ItemsBlock ul li a.moduleItemCategory {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.k2ItemsBlock ul li div.moduleItemTags {
+	display: block;
+	padding: 0;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.k2ItemsBlock ul li div.moduleItemTags:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 18px;
+	margin-right: 0.5em;
+	content: "\f02b";
+}
+div.k2ItemsBlock ul li div.moduleItemTags b {
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+div.k2ItemsBlock ul li a.moduleItemComments {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 2em;
+	border-right: none;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+div.k2ItemsBlock ul li span.moduleItemHits {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+	border: none;
+}
+div.k2ItemsBlock ul li span.moduleItemHits:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 0.5em;
+	content: "\f06e";
+}
+
+/* K2 Comments
+---------------------------------------------------------------------------- */
+
+div.k2LatestCommentsBlock ul {
+	margin: 0;
+	padding-left: 0;
+}
+div.k2LatestCommentsBlock ul li {
+	list-style-type: none;
+	margin-bottom: 2em;
+}
+div.k2LatestCommentsBlock ul li.lastItem {
+	margin-bottom: 1em;
+}
+div.k2LatestCommentsBlock ul li a.lcAvatar img {
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+div.k2LatestCommentsBlock ul li span.lcComment {
+	display: block;
+	line-height: 21px;
+	color: #333;
+	margin-bottom: 8px;
+}
+div.k2LatestCommentsBlock ul li span.lcUsername {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.k2LatestCommentsBlock ul li span.lcUsername:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 12px;
+	content: "\f075";
+}
+div.k2LatestCommentsBlock ul li span.lcCommentDate {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.k2LatestCommentsBlock ul li span.lcItemTitle {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 1em;
+}
+div.k2LatestCommentsBlock ul li span.lcItemCategory {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+div.itemComments ul.itemCommentsList li.authorResponse {
+	background: none;
+	padding: 0;
+	border: none;
+}
+div.itemComments ul.itemCommentsList li img {
+	padding: 0;
+	margin: 0 20px 0 0;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+div.itemComments ul.itemCommentsList li span.commentDate,
+div.itemComments ul.itemCommentsList li span.commentAuthorName {
+	padding: 0;
+	margin: 0 0 8px 0;
+	border-right: none;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+}
+div.itemComments ul.itemCommentsList li span.commentDate:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 12px;
+	content: "\f075";
+}
+
+/* K2 Tools
+---------------------------------------------------------------------------- */
+
+div.k2ArchivesBlock ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+div.k2ArchivesBlock ul li a:before {
+	font-family: FontAwesome;
+	content: "\f105";
+	padding-right: 10px;
+ 	color: #333;
+}
+
+/* K2 User
+---------------------------------------------------------------------------- */
+
+div.k2LoginBlock fieldset.input input.button,
+div.k2UserBlock form input.button.ubLogout {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+  padding: 9px 16px 7px;
+  font-size: 14px; 
+	line-height: 21px; 
+	*line-height: 21px;
+	text-align: center; 
+	vertical-align: middle; 
+	cursor: pointer; 
+	background-color: #0099FF; 
+  color: #fff; 
+  background-image: none; 
+  border: 1px solid #008fee;
+  box-shadow: 
+    0px 1px 1px rgba(200, 200, 200, 0.9),
+    2px 1px 1px rgba(200, 200, 200, 0.9),
+    1px 2px 1px rgba(200, 200, 200, 0.9),
+    3px 2px 1px rgba(80, 80, 80, 0.2),
+    2px 3px 1px rgba(80, 80, 80, 0.2),
+    4px 3px 2px rgba(210, 210, 210, 0.3),
+    3px 4px 2px rgba(213, 213, 213, 0.3),
+    5px 4px 2px rgba(216, 216, 216, 0.3),
+    4px 5px 2px rgba(219, 219, 219, 0.3),
+    6px 5px 2px rgba(223, 223, 223, 0.3),
+    5px 6px 2px rgba(226, 226, 226, 0.3),
+    7px 6px 4px rgba(229, 229, 229, 0.3),
+    6px 7px 4px rgba(233, 233, 233, 0.3),
+    8px 7px 6px rgba(236, 236, 236, 0.3),
+    7px 8px 6px rgba(239, 239, 239, 0.5),
+    9px 8px 9px rgba(243, 243, 243, 0.7),
+    8px 9px 9px rgba(246, 246, 246, 0.9);
+  -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+/* IE */
+.lt-ie9 div.k2LoginBlock fieldset.input input.button,
+.lt-ie9 div.k2UserBlock form input.button.ubLogout {
+	border: none;
+  padding: 9px 16px 5px;
+  margin-right: 0;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+div.k2LoginBlock fieldset.input input.button:hover,
+div.k2UserBlock form input.button.ubLogout:hover {
+	background-color: #0099FF;
+  border: 1px solid #008fee;
+  background-image:none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+div.k2LoginBlock fieldset.input input.button:active,
+div.k2UserBlock form input.button.ubLogout:active { 
+  	box-shadow:none; 
+}
+/* IE */
+.lt-ie9 div.k2LoginBlock fieldset.input input.button:hover,
+.lt-ie9 div.k2UserBlock form input.button.ubLogout:hover {
+	border: none;
+}
+div.k2LoginBlock ul,
+div.k2UserBlock ul.k2UserBlockActions {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+div.k2UserBlock ul.k2UserBlockActions {
+	margin-top: 1em;
+}
+div.k2LoginBlock ul li,
+div.k2UserBlock ul.k2UserBlockActions li {
+	line-height: 2em;
+}
+div.k2UserBlock ul.k2UserBlockActions li a.modal {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: auto;
+	margin-left: 0;
+	background-color: #ffffff;
+	border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: none;
+}
+div.k2LoginBlock ul li a:before,
+div.k2UserBlock ul.k2UserBlockActions li a:before {
+	font-family: FontAwesome;
+	content: "\f105";
+	padding-right: 10px;
+ 	color: #333;
+}
+div.k2LoginBlock fieldset.input {
+	padding: 0 0 6px 0;
+}
+div.k2LoginBlock form {
+	margin-bottom: 0;
+}
+div.k2UserBlock div.k2UserBlockDetails span.ubName {
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 24.5px;
+	line-height: 50px;
+}
+div.k2UserBlock div.k2UserBlockDetails a.ubAvatar img {
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+div.k2UserBlock div.k2UserBlockDetails span.ubCommentsCount {
+	display: inline-block;
+	margin-top: 0.5em;
+}
+div.k2LoginBlock fieldset.input input#modlgn_username.inputbox,
+div.k2LoginBlock fieldset.input input#modlgn_passwd {
+	display: inline;
+	width: inherit;
+}
+
+/* K2 Users
+---------------------------------------------------------------------------- */
+
+div.k2UsersBlock ul {
+	margin: 0;
+	padding-left: 0;
+}
+div.k2UsersBlock ul li {
+	list-style-type: none;
+	margin-bottom: 2em;
+}
+div.k2UsersBlock ul li.lastItem {
+	margin-bottom: 0;
+}
+div.k2UsersBlock ul li a.ubUserAvatar img {
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+div.k2UsersBlock ul li a.ubUserName {
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300!important;
+	font-size: 21px;
+	line-height: 1.3em;
+}
+div.k2UsersBlock ul li div.ubUserDescription {
+	margin-top: 0.5em;
+}
+div.k2UsersBlock ul li h3 {
+	font-size: 24.5px;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #444;
+}
+div.k2UsersBlock ul li ul.ubUserItems li:before {
+	font-family: FontAwesome;
+	content: "\f105";
+	padding-right: 10px;
+ 	color: #333;
+}
+
+/* Items Filtered by Date
+---------------------------------------------------------------------------- */
+
+div.genericItemView {
+	padding: 0;
+	margin: 0;
+	border: none;
+	overflow: hidden;
+}
+div.genericItemCategory {
+	display: block;
+	border-bottom: none;
+	border-left: 1px solid #cccccc;
+	padding: 0 14px;
+	font-size: 14px;
+	border-right: none;
+}
+div.genericItemCategory span,
+div.genericItemCategory a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+div.genericItemHeader h2.genericItemTitle {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+	color: #444;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	font-weight: 300;
+  line-height: 1.3em;
+	margin-top: 0;
+  margin-bottom: 19px;
+	padding-bottom: 6px;
+	text-align: left;
+}
+div.genericItemHeader span.genericItemDateCreated {
+	display: inline-block;
+	padding-top: 4px;
+	font-size: 12px;
+}
+div.genericItemReadMore {
+	display: inline-block;
+	*display: inline;/* IE7 inline-block hack */
+	*zoom: 1;
+	background-color: #AA528B;        
+  background-image: none;
+  color: #fff; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+  padding: 12px 21px 8px 14px;
+	margin: 2em 0 1em 0;
+	font-size: 18px;
+  text-transform: uppercase; 
+  vertical-align: top;
+  -webkit-border-radius:3px; 
+  -moz-border-radius:3px;
+  border-radius: 3px; 
+  box-shadow: none;
+  border: none;
+	-webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+div.genericItemReadMore:hover { 
+  background-image:none;
+  color: #fff;
+  background-color: #111!important; 
+}
+div.genericItemReadMore a,
+div.genericItemReadMore a:hover {
+	color: #fff;
+}
+div.genericItemReadMore a:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: top; 
+	font-size: 14px;
+	margin-right: 7px;
+	content: "\f054";	
+}
+/* IE */
+.lt-ie9 div.genericItemReadMore {
+	padding: 12px 21px 16px;
+	display: inline;
+	line-height: 1em;
+}

@@ -1,0 +1,674 @@
+/* Item View 
+---------------------------------------------------------------------------- */
+
+div.itemView {
+	padding: 0;
+	border: none;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+
+/* Item Header 
+---------------------------------------------------------------------------- */
+
+div.itemHeader {
+	padding-bottom: 0;
+	margin: 14px 0 7px;
+}
+
+/* Item Title 
+---------------------------------------------------------------------------- */
+
+div.itemHeader h2.itemTitle {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+	color: #444;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	font-weight: 300;
+  line-height: 1.3em;
+	margin-top: 0;
+  margin-bottom: 19px;
+	padding-bottom: 6px;
+	text-align: left;
+}
+div.itemHeader h2.itemTitle span {
+	padding: 0;
+}
+div.itemHeader h2.itemTitle span sup {
+	color: #777;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Item Toolbar 
+---------------------------------------------------------------------------- */
+
+div.itemToolbar ul li span.itemTextResizerTitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #999;
+}
+div.itemToolbar {
+	margin-top: 20px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+div.itemToolbar ul {
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+div.itemToolbar ul li:first-child {
+	padding-left: 0;
+}
+div.itemToolbar ul li a {
+	font-size: 14px;
+}
+div.itemToolbar ul li a.itemCommentsLink {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: left;
+}
+div.itemToolbar ul li a.itemPrintLink span,
+div.itemToolbar ul li a.itemEmailLink span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #999;
+}
+div.itemToolbar ul li a.itemPrintLink span:hover,
+div.itemToolbar ul li a.itemEmailLink span:hover {
+	color: #333;
+}
+div.itemToolbar ul li a.itemEmailLink span:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 0.5em;
+	content: "\f0e0";
+}
+div.itemToolbar ul li a.itemPrintLink span:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 0.5em;
+	content: "\f02f";
+}
+div.itemRatingBlock {
+	padding: 8px 0 0;
+}
+
+div.itemRatingBlock span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #999;
+}
+div.itemRatingLog {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #999;
+}
+
+/* Item Footer 
+---------------------------------------------------------------------------- */
+
+div.itemContentFooter {
+	border: none;
+}
+span.itemHits {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+}
+span.itemHits:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 0.5em;
+	content: "\f06e";
+}
+span.itemDateModified {
+	font-style: italic;
+	color: #999;
+}
+
+/* Item Category Name 
+---------------------------------------------------------------------------- */
+
+div.itemCategory {
+	display: block;
+	padding: 0;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.itemCategory:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 0.5em;
+	content: "\f046";
+}
+div.itemCategory span {
+	font-weight: normal;
+	color: #333;
+	padding: 0;
+}
+
+/* Item Tags 
+---------------------------------------------------------------------------- */
+
+div.itemTagsBlock {
+	display: block;
+	padding: 0;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.itemTagsBlock:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 18px;
+	margin-right: 0.5em;
+	content: "\f02b";
+}
+div.itemTagsBlock span {
+	font-weight: normal;
+	color: #333;
+	padding: 0;
+}
+
+/* Item Author 
+---------------------------------------------------------------------------- */
+
+h3.itemAuthorName {
+	line-height: 28px;
+	margin-bottom: 18px;
+
+}
+div.itemAuthorBlock div.itemAuthorDetails {
+	padding: 0;
+}
+div.itemAuthorBlock {
+	background-color: transparent; 
+	border: none;
+	margin: 26px 0 0;
+	padding: 0;
+}
+div.itemAuthorBlock img.itemAuthorAvatar {
+	margin-right: 20px;
+}
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl,
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorEmail {
+	display: block;
+	color: #333;
+	border-right: none;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+}
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl a,
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorEmail a {
+	padding-left: 0.3em;
+}
+
+/* Item Author Latest 
+---------------------------------------------------------------------------- */
+
+div.itemAuthorLatest {
+	margin-top: 20px;
+}
+div.itemAuthorLatest h3 {
+	margin-top: 25px;
+}
+div.itemAuthorLatest ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-top: 2px;
+	padding-left: 0;
+}
+div.itemAuthorLatest ul li { 
+	line-height: 1.5em;
+}
+div.itemAuthorLatest ul li a:before {
+	font-family: FontAwesome;
+	content: "\f105";
+	padding-right: 10px;
+	color: #333;
+}
+
+/* Item Related Items 
+---------------------------------------------------------------------------- */
+
+div.itemRelated h3 {
+	margin-top: 32px;
+}
+div.itemRelated ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+div.itemRelated ul li { 
+	line-height: 2em;
+}
+div.itemRelated ul li a.itemRelTitle:before {
+	font-family: FontAwesome;
+	content: "\f105";
+	padding-right: 10px;
+	color: #333;
+}
+div.itemRelCat {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+div.itemRelAuthor {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/* Item Navigation 
+---------------------------------------------------------------------------- */
+
+div.itemNavigation {
+	background-color: transparent; 
+	border: none;
+	margin: 28px 0;
+	padding: 0;
+}
+span.itemNavigationTitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: -1px;
+	color: #333!important;
+}
+div.itemNavigation span.itemNavigationTitle,
+div.itemNavigation a.itemNext,
+div.itemNavigation a.itemPrevious {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+/* Item Comments 
+---------------------------------------------------------------------------- */
+
+div.itemComments {
+	background-color: transparent; 
+	border: none;
+	padding: 0;
+}
+div.itemCommentsForm h3 {
+	margin-bottom: 10px;
+}
+div.itemCommentsForm p.itemCommentsFormNotes {
+	border: none;
+	font-size: 12px;
+	color: #999;
+	font-style: italic;
+}
+div.itemCommentsForm form {
+	margin-top: 20px;
+}
+div.itemCommentsForm form label.formComment,
+div.itemCommentsForm form label.formName,
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formUrl {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+	font-size: 14px;
+	line-height: 24px;
+
+}
+div.itemCommentsForm form input.inputbox,
+div.itemCommentsForm form textarea.inputbox {
+	font-size: 13px;
+	color: #333;
+}
+div.itemCommentsForm form input#submitCommentButton {
+	display: inline-block;
+	*display: inline;/* IE7 inline-block hack */
+	*zoom: 1;
+	margin: 30px 10px 10px 0;
+  padding: 9px 16px 7px;
+  border: 1px solid #ddd;
+  box-shadow: 
+    0px 1px 1px rgba(200, 200, 200, 0.9),
+    2px 1px 1px rgba(200, 200, 200, 0.9),
+    1px 2px 1px rgba(200, 200, 200, 0.9),
+    3px 2px 1px rgba(80, 80, 80, 0.2),
+    2px 3px 1px rgba(80, 80, 80, 0.2),
+    4px 3px 2px rgba(210, 210, 210, 0.3),
+    3px 4px 2px rgba(213, 213, 213, 0.3),
+    5px 4px 2px rgba(216, 216, 216, 0.3),
+    4px 5px 2px rgba(219, 219, 219, 0.3),
+    6px 5px 2px rgba(223, 223, 223, 0.3),
+    5px 6px 2px rgba(226, 226, 226, 0.3),
+    7px 6px 4px rgba(229, 229, 229, 0.3),
+    6px 7px 4px rgba(233, 233, 233, 0.3),
+    8px 7px 6px rgba(236, 236, 236, 0.3),
+    7px 8px 6px rgba(239, 239, 239, 0.5),
+    9px 8px 9px rgba(243, 243, 243, 0.7),
+    8px 9px 9px rgba(246, 246, 246, 0.9);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+}
+/* IE */
+.lt-ie9 div.itemCommentsForm form input#submitCommentButton {
+  padding: 9px 16px 5px;
+  margin-right: 0;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+div.itemCommentsForm form input#submitCommentButton:hover { 
+  background-image:none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+div.itemCommentsForm form input#submitCommentButton:active { 
+  box-shadow:none; 
+}
+div.itemCommentsForm form span#formLog {
+   display: block;
+   margin: 21px 0 0;
+   padding: 14px 0 0;
+}
+
+/* Item Comments Pagination
+---------------------------------------------------------------------------- */
+
+div.itemCommentsPagination {
+  margin: 28px 0 21px;
+}
+div.itemCommentsPagination ul.pagination-list {
+  list-style-type: none;
+  line-height: 2.4em;
+  margin-left: 0;
+}
+div.itemCommentsPagination ul.pagination-list li {
+  float: left;
+} 
+div.itemCommentsPagination ul.pagination-list li a {
+  color: #444;
+  margin-right: 1em;
+  padding: 8px 12px 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  box-shadow:
+    0px 1px 1px rgba(200, 200, 200, 0.9),
+    2px 1px 1px rgba(200, 200, 200, 0.9),
+    1px 2px 1px rgba(200, 200, 200, 0.9),
+    3px 2px 1px rgba(80, 80, 80, 0.2),
+    2px 3px 1px rgba(80, 80, 80, 0.2),
+    4px 3px 2px rgba(210, 210, 210, 0.3),
+    3px 4px 2px rgba(213, 213, 213, 0.3),
+    5px 4px 2px rgba(216, 216, 216, 0.3),
+    4px 5px 2px rgba(219, 219, 219, 0.3),
+    6px 5px 2px rgba(223, 223, 223, 0.3),
+    5px 6px 2px rgba(226, 226, 226, 0.3),
+    7px 6px 4px rgba(229, 229, 229, 0.3),
+    6px 7px 4px rgba(233, 233, 233, 0.3),
+    8px 7px 6px rgba(236, 236, 236, 0.3),
+    7px 8px 6px rgba(239, 239, 239, 0.5),
+    9px 8px 9px rgba(243, 243, 243, 0.7),
+    8px 9px 9px rgba(246, 246, 246, 0.9);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);  
+  border: 1px solid #ddd; 
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+div.itemCommentsPagination ul.pagination-list li a:hover {
+  background-image: none;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+div.itemCommentsPagination ul.pagination-list [class^="icon-"], 
+div.itemCommentsPagination ul.pagination-list [class*=" icon-"] {
+  font-size: 18px;
+  padding-right: 0;
+}
+div.itemCommentsPagination ul.pagination-list > .disabled > a:hover,
+div.itemCommentsPagination ul.pagination-list > .active > a:hover {
+  box-shadow: 
+    0px 1px 1px rgba(200, 200, 200, 0.9),
+    2px 1px 1px rgba(200, 200, 200, 0.9),
+    1px 2px 1px rgba(200, 200, 200, 0.9),
+    3px 2px 1px rgba(80, 80, 80, 0.2),
+    2px 3px 1px rgba(80, 80, 80, 0.2),
+    4px 3px 2px rgba(210, 210, 210, 0.3),
+    3px 4px 2px rgba(213, 213, 213, 0.3),
+    5px 4px 2px rgba(216, 216, 216, 0.3),
+    4px 5px 2px rgba(219, 219, 219, 0.3),
+    6px 5px 2px rgba(223, 223, 223, 0.3),
+    5px 6px 2px rgba(226, 226, 226, 0.3),
+    7px 6px 4px rgba(229, 229, 229, 0.3),
+    6px 7px 4px rgba(233, 233, 233, 0.3),
+    8px 7px 6px rgba(236, 236, 236, 0.3),
+    7px 8px 6px rgba(239, 239, 239, 0.5),
+    9px 8px 9px rgba(243, 243, 243, 0.7),
+    8px 9px 9px rgba(246, 246, 246, 0.9);
+}
+div.itemCommentsPagination ul.pagination-list li a:before {
+  content: none!important;
+}
+div.itemCommentsPagination ul.pagination-list p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 9px;
+}
+
+
+/* 3. TAGS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Tag Item View 
+---------------------------------------------------------------------------- */
+
+div.tagItemView {
+	padding: 0 0 1em 0;
+	margin: 0 0 3em 0;
+	border-bottom: none;
+	overflow: hidden;
+}
+
+/* Tag Header 
+---------------------------------------------------------------------------- */
+
+div.tagItemHeader {
+	padding-bottom: 0;
+	margin: 14px 0;
+}
+
+/* Tag Item Title 
+---------------------------------------------------------------------------- */
+
+div.tagItemHeader h2.tagItemTitle {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+	color: #444;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	font-weight: 300;
+  line-height: 1.3em;
+	margin-top: 0;
+  margin-bottom: 19px;
+	padding-bottom: 6px;
+	text-align: left;
+}
+
+/* Tag Item Category 
+---------------------------------------------------------------------------- */
+
+div.tagItemCategory {
+	display: block;
+	padding: 0;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+div.tagItemCategory:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	font-size: 16px;
+	margin-right: 0.5em;
+	content: "\f046";
+}
+div.tagItemCategory span {
+	font-weight: normal;
+	color: #333;
+	padding: 0;
+}
+
+/* Tag Read More 
+---------------------------------------------------------------------------- */
+
+div.tagItemReadMore {
+	display: inline-block;
+	*display: inline;/* IE7 inline-block hack */
+	*zoom: 1;
+	margin-right: 10px;
+	margin-top: 1.5em;  
+  margin-bottom: 1.5em; 
+  padding: 10px 16px 6px;
+  font-size: 14px; 
+	line-height: 21px; 
+	*line-height: 21px;
+  border: 1px solid #ddd; 
+	text-align: center; 
+	vertical-align: middle; 
+	cursor: pointer; 
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+	background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5e5e5', GradientType=0);
+  	box-shadow: 
+    0px 1px 1px rgba(200, 200, 200, 0.9),
+    2px 1px 1px rgba(200, 200, 200, 0.9),
+    1px 2px 1px rgba(200, 200, 200, 0.9),
+    3px 2px 1px rgba(80, 80, 80, 0.2),
+    2px 3px 1px rgba(80, 80, 80, 0.2),
+    4px 3px 2px rgba(210, 210, 210, 0.3),
+    3px 4px 2px rgba(213, 213, 213, 0.3),
+    5px 4px 2px rgba(216, 216, 216, 0.3),
+    4px 5px 2px rgba(219, 219, 219, 0.3),
+    6px 5px 2px rgba(223, 223, 223, 0.3),
+    5px 6px 2px rgba(226, 226, 226, 0.3),
+    7px 6px 4px rgba(229, 229, 229, 0.3),
+    6px 7px 4px rgba(233, 233, 233, 0.3),
+    8px 7px 6px rgba(236, 236, 236, 0.3),
+    7px 8px 6px rgba(239, 239, 239, 0.5),
+    9px 8px 9px rgba(243, 243, 243, 0.7),
+    8px 9px 9px rgba(246, 246, 246, 0.9);
+  -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+div.tagItemReadMore a {
+	color: #333;
+}
+div.tagItemReadMore:hover { 
+  background-image:none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+div.tagItemReadMore:active { 
+  box-shadow:none; 
+}
+div.tagItemReadMore a:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: middle; 
+	font-size: 14px;
+	margin-right: 0.5em;
+	content: "\f054";	
+}
+
+/* Tag Item Intro Text
+---------------------------------------------------------------------------- */
+
+div.tagItemIntroText {
+	padding: 0;
+}

@@ -1,0 +1,244 @@
+/* ==========================================================================
+    JOOMLA MODULES
+   ========================================================================== */
+.module {
+  /* Remove default bullets on lists inside modules */
+}
+.module ul {
+  list-style-type: none;
+}
+
+ul.latestnews, .tagspopular ul {
+  list-style: none;
+}
+
+.section-container > section .content {
+  overflow: hidden;
+}
+
+.section-container > section .content > .button:last-child {
+  padding-bottom: 0.75em !important;
+  float: right;
+}
+
+/* ==========================================================================
+    JOOMLA CONTENT
+   ========================================================================== */
+ul.inline {
+  margin-bottom: 5px;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin-right: 3px;
+  padding-right: 8px;
+  font-size: 0.85em;
+  font-weight: lighter;
+  font-style: italic;
+  border-right: 1px solid #999;
+  line-height: 1;
+}
+
+ul.inline li:last-child {
+  border-right: none;
+}
+
+.actions {
+  float: right;
+}
+
+ul.actions, ul.pager.pagenav {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.actions li {
+  display: inline;
+  margin-right: 5px;
+}
+
+ul.actions li a {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999999px;
+}
+
+ul.actions li.print a {
+  background: url(../images/systemIcons/print.png) 0 0 no-repeat;
+}
+
+ul.actions li.email a {
+  background: url(../images/systemIcons/email.png) 0 0 no-repeat;
+}
+
+ul.actions li.edit a {
+  background: url(../images/systemIcons/edit.png) 0 0 no-repeat;
+}
+
+ul.pager.pagenav li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+}
+
+.pagination {
+  display: block;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.pagination ul {
+  text-align: center;
+}
+
+.pagination ul li {
+  display: block;
+  float: left;
+  height: auto;
+  color: #222222;
+  font-size: 0.875em;
+  margin-left: 0.3125em;
+}
+
+.pagination ul li a {
+  display: block;
+  padding: 0.0625em 0.4375em 0.0625em;
+  color: #999999;
+}
+
+.pagination ul li:hover a,
+.pagination ul li a:focus {
+  background: #27AE60;
+  color: white;
+}
+
+.pagination ul li.unavailable a {
+  cursor: default;
+  color: #999999;
+}
+
+.pagination ul li.unavailable:hover a, .pagination li.unavailable a:focus {
+  background: transparent;
+}
+
+.pagination ul li.current a {
+  background: #27AE60;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+.pagination ul li.current a:hover, .pagination li.current a:focus {
+  background: #27AE60;
+  color: white;
+}
+
+/* ==========================================================================
+    FOOTER
+   ========================================================================== */
+footer.row {
+  padding: .875em 0;
+}
+
+/* ==========================================================================
+    FONT-FACE FONTS
+   ========================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/*.icon-home, .icon-pencil, .icon-connection, .icon-menu, */
+.icon-google-plus, .googleplus, .icon-facebook, .facebook, .icon-twitter, .twitter, .icon-feed, .rss, .icon-dribbble, .dribbble, .icon-github, .github, .icon-paypal {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* Not actually using the following right now, so commenting out. May, or may not,
+ * get round to grabbing a new set of font files.
+
+.icon-home:before {
+  content: "\e004";
+}
+.icon-pencil:before {
+  content: "\e005";
+}
+.icon-connection:before {
+  content: "\e006";
+}
+.icon-menu:before {
+  content: "\e007";
+}
+.icon-feed:before {
+  content: "\e002";
+}
+*/
+.icon-google-plus:before, .googleplus:before {
+  content: "\e000"; }
+
+.icon-facebook:before, .facebook:before {
+  content: "\e008"; }
+
+.icon-twitter:before, .twitter:before {
+  content: "\e001"; }
+
+.icon-dribbble:before, .dribbble:before {
+  content: "\e009"; }
+
+.icon-github:before, .github:before {
+  content: "\e00a"; }
+
+.icon-paypal:before {
+  content: "\e00b"; }
+
+/* Print /email icons are ugly, let's not bother! */
+/*
+.icon-print:before {
+  content: "\e00c";
+}
+.icon-mail:before {
+  content: "\e00d";
+}
+*/
+
+ul.social {
+  list-style: none;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+ul.social li a {
+  padding: 0.20225em;
+}
+
+ul.social, .copyright {
+  display: inline-block;
+  margin-right: -.25em;
+  vertical-align: top;
+}
+
+ul.right, ul.social {
+  margin: 0;
+  padding: 0;
+}

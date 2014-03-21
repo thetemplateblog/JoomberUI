@@ -1,0 +1,15 @@
+/*JoomberUI - a Joomla template framework by David Childs */
+/* antonydoyle.co.uk */
+/* siegeengine.org */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Joomla
+  Software:  SublimeText2, Git
+
+/* THANKS */
+  Antony Doyle: antonydoyle.co.uk
+  Seth Warburton: internet-inspired.com‎
+  Nandroid: nandroide.com
+  

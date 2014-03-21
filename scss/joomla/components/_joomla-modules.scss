@@ -1,0 +1,29 @@
+/* ==========================================================================
+    JOOMLA MODULES
+	* Taken from nternetinspired:
+    * https://github.com/nternetinspired/OneWeb/blob/master/scss/framework/objects/_joomla-modules.scss
+   ========================================================================== */
+
+	.module {
+
+		/* Remove default bullets on lists inside modules */
+		ul {
+			list-style-type: none;
+		}
+	}
+
+	.moduletable {
+
+
+	}
+
+	ul.latestnews, .tagspopular ul {
+	list-style:none;	
+	}
+	.section-container > section .content {
+		overflow:hidden;	
+	}
+	.section-container > section .content > .button:last-child {
+		padding-bottom: 0.75em !important;	
+		float:right;
+	}
