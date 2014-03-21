@@ -1,5 +1,4 @@
 <h1>JoomberUI</h1>
-============
 
 <h3>Foundation 4 for Joomla 3</h3>
 
@@ -15,7 +14,7 @@
 <ul>
 <li>None at this time, but I am sure this list will grow quickly!</li>
 
----------------------
+
 
 <h5>Changelog</h5>
 <strong>xx/xx/xx</strong>
