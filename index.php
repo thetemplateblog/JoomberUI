@@ -49,8 +49,8 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 <body>
 	<?php if ($this->countModules( 'nav' )) : ?>
 	<?php if ($stickyTopMenu == 1) : ?><div class="sticky"><?php endif; ?>
-	  <section class="row">
-	    <nav class="top-bar" data-section="data-topbar">
+	  <div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); ?>">
+	    <nav class="top-bar">
 	        <ul class="title-area">
 	          <li class="name">
 	            <h1><a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($topbarTitle);?>"><?php echo htmlspecialchars($topbarTitle);?></a></h1>
@@ -63,81 +63,107 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	        </ul>
 	      </section>
 	    </nav>
-	  </section>
+	  </div>
 	<?php if ($stickyTopMenu == 1) : ?></div><?php endif; ?>
 	<?php endif; ?>
 	
 	<?php if ($this->countModules( 'top' )) : ?>
+    <div class="top-row">
+      <div class="wrapper">
         <section class="row">
 			<!--toprow-->
-                <jdoc:include type="modules" name="top" style="siegeEngine" />
+          <jdoc:include type="modules" name="top" style="siegeEngine" />
         </section>
+      </div>
+    </div>  
 	<?php endif; ?>
 	
 	<?php if ($this->countModules( 'above' )) : ?>
+    <div class="above-row">
+      <div class="wrapper">  
         <section class="row">
-            <!--aboverow-->
-            <jdoc:include type="modules" name="above" style="siegeEngine" />
+          <!--aboverow-->
+          <jdoc:include type="modules" name="above" style="siegeEngine" />
         </section>
-    <?php endif; ?>
+      </div>
+    </div>
+  <?php endif; ?>
 	
-    <div class="row">
-    	<!--mainrow-->
-        <?php if ($this->countModules( 'left' )) : ?>
-            <section class="<?php echo $leftWidth ?> columns sidebar">
-                <!--left-row-->
-                <jdoc:include type="modules" name="left" style="siegeEngine" />
-            </section>
-        <?php endif; ?>
-        <div class="<?php echo $mainwidth ?> columns">
-        	<!--mainrow-->
-             <?php if ($this->countModules( 'above-content' )) : ?>
-                <div class="above-content">
-                    <!--above-content-->
-                    <jdoc:include type="modules" name="above-content" style="siegeEngine" />
-                </div>
-            <?php endif; ?>            
-			<?php if ($this->countModules( 'breadcrumbs' )) : ?>
-				<div class="large-12">
-					<jdoc:include type="modules" name="breadcrumbs" style="none" />
-				</div>
-			<?php endif; ?> 
-            	<jdoc:include type="message" />  
-    			<jdoc:include type="component" />
-            <?php if ($this->countModules( 'below-content' )) : ?>
-                <section class="below-content">
-                    <!--below-content-->
-                    <jdoc:include type="modules" name="below-content" style="siegeEngine" />
-                </section>
-            <?php endif; ?>
+  <div class="row">
+  	<!--mainrow-->
+    <?php if ($this->countModules( 'left' )) : ?>
+      <section class="<?php echo $leftWidth ?> columns sidebar">
+        <!--left-row-->
+        <jdoc:include type="modules" name="left" style="siegeEngine" />
+      </section>
+    <?php endif; ?>
+      <div class="<?php echo $mainwidth ?> columns">
+       	<!--mainrow-->
+    <?php if ($this->countModules( 'above-content' )) : ?>
+      <div class="above-content">
+        <!--above-content-->
+          <jdoc:include type="modules" name="above-content" style="siegeEngine" />
+      </div>
+    <?php endif; ?>            
+
+		<?php if ($this->countModules( 'breadcrumbs' )) : ?>
+      <div class="breadcrumbs-row">
+        <div class="wrapper">
+    			<div class="large-12">
+    				<jdoc:include type="modules" name="breadcrumbs" style="none" />
+    			</div>
+        </div>
+      </div>
+		<?php endif; ?> 
+
+     	<jdoc:include type="message" />  
+    	<jdoc:include type="component" />
+    <?php if ($this->countModules( 'below-content' )) : ?>
+      <section class="below-content">
+        <!--below-content-->
+        <jdoc:include type="modules" name="below-content" style="siegeEngine" />
+      </section>
+    <?php endif; ?>
    		</div>
 		<?php if ($this->countModules( 'right' )) : ?>
-            <section class="<?php echo $rightWidth ?> columns sidebar">
-                <!--right-row-->
-                <jdoc:include type="modules" name="right" style="siegeEngine" />
-            </section>
-        <?php endif; ?>
-    </div>
+      <section class="<?php echo $rightWidth ?> columns sidebar">
+        <!--right-row-->
+          <jdoc:include type="modules" name="right" style="siegeEngine" />
+      </section>
+    <?php endif; ?>
+      </div>
 	
     <?php if ($this->countModules( 'below' )) : ?>
-        <section class="row">
+      <div class="below-row">
+        <div class="wrapper">
+          <section class="row">
             <!--belowrow-->
-                <jdoc:include type="modules" name="below" style="siegeEngine" />
-        </section>
+            <jdoc:include type="modules" name="below" style="siegeEngine" />
+          </section>
+        </div>
+      </div>
     <?php endif; ?>
 
     <?php if ($this->countModules( 'bottom' )) : ?>
-        <section class="row">
+      <div class="bottom-row">
+        <div class="wrapper">
+          <section class="row">
             <!--bottomrow-->
             <jdoc:include type="modules" name="bottom" style="siegeEngine" />
-        </section>
+          </section>
+        </div>
+      </div>
     <?php endif; ?>
 	
     <?php if ($this->countModules( 'footer' )) : ?>
-        <footer class="row">
-            <!--footerrow-->
-            <jdoc:include type="modules" name="footer" style="siegeEngine" />
-        </footer>
+      <div class="footer-row">
+        <div class="wrapper">
+          <footer class="row">
+              <!--footerrow-->
+              <jdoc:include type="modules" name="footer" style="siegeEngine" />
+          </footer>
+        </div>
+      </div>
     <?php endif; ?>
 
 <!-- Credit Row Taken from https://github.com/nternetinspired/OneWeb -->         

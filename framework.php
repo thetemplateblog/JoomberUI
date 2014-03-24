@@ -12,11 +12,6 @@ Credits: Code taken from the following:
   Antony Doyle    - https://github.com/antonydoyle/siegeengine2
 /* ===================================================================== */
 
-/* =====================================================================
-Credit to:	Seth Warburton - Internet Inspired! - @nternetinspired. 		
-Probably should be thanking Nescafe too... 		            
-/* ===================================================================== */
-
 // Define shortcuts for template parameters
 $loadMoo 		          = $this->params->get('loadMoo');
 $setGeneratorTag	    = $this->params->get('setGeneratorTag');
@@ -111,8 +106,8 @@ $footer = (int) ($this->countModules('footer') > 0);
 
 // To enable use of site configuration
 $app 					= JFactory::getApplication();
-$pageParams             = $app->getParams();
-$sitename				= $app->getCfg('sitename');
+$pageParams   = $app->getParams();
+$sitename     = $app->getCfg('sitename');
 // Returns a reference to the global document object
 $doc = JFactory::getDocument();
 
@@ -134,3 +129,17 @@ if ( !$loadMoo ) {
 }
 
 #-------------End Construct Code--------------------------------------#
+jimport( 'joomla.application.module.helper' );
+
+function getParam( $module, $attribs ) {
+  $modules = JModuleHelper::getModules( $module );
+  $params = json_decode($modules[0]->params);
+  $param = $params->$attribs;
+    if (strpos($param,'contain-to-grid') !== false) {
+    $param = 'contain-to-grid';
+    }
+    else {
+      $param = 'row';
+    }
+  return $param;
+  }
