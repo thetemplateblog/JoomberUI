@@ -37,6 +37,7 @@ $googleplus            = $this->params->get('googleplus');
 $googleplusLink        = $this->params->get('googleplusLink');
 $github                = $this->params->get('github');
 $githubLink            = $this->params->get('githubLink');
+$active                = JFactory::getApplication()->getMenu()->getActive();
 
 // Do we have social links?
 $social                = ($twitterLink?1:0)+ ($dribbbleLink?1:0)+ ($facebookLink?1:0)+ ($googleplusLink?1:0)+ ($githubLink?1:0);
