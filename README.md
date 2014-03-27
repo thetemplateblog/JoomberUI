@@ -1,6 +1,6 @@
 <h1>JoomberUI</h1>
 
-<h3>Foundation 4 for Joomla 3</h3>
+<h3>Foundation 5 for Joomla 3</h3>
 
 <p>JoomberUI is a fork to <a href="_QQ_"http://http://www.siegeengine.org/"_QQ_">Siege Engine</a>, a responsive template framework for Joomla built on Foundation4</p>
 <p>Based on Zurb's excellent Foundation4 framework, and using some simple but robust PHP and a lot of things learned from SiegeEngine2, JoomberUI aims to be fast and flexible to use.</p>
