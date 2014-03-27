@@ -35,7 +35,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
       <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/<?php echo $customCSS ?>" />
     <?php endif; ?>
 
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/custom.modernizr.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/vendor/custom.modernizr.js"></script>
       <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -49,7 +49,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 </head>
 <body class="<?php echo $active->alias; ?> ">
 	<?php if ($this->countModules( 'nav' )) : ?>
-	<?php if ($stickyTopMenu == 1) : ?><div class="sticky"><?php endif; ?>
+	<?php if ($stickyTopMenu == 1) : ?><div class="fixed"><?php endif; ?>
 	  <div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); ?>">
 	    <nav class="top-bar">
 	        <ul class="title-area">
@@ -60,7 +60,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	        </ul>
 	      <section class="top-bar-section">
 	        <ul class="right">
-	          <jdoc:include type="modules" name="nav" style="siegeEngine" />
+	          <jdoc:include type="modules" name="nav" style="joomberui" />
 	        </ul>
 	      </section>
 	    </nav>
@@ -73,7 +73,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
       <div class="wrapper">
         <section class="row">
 			<!--toprow-->
-          <jdoc:include type="modules" name="top" style="siegeEngine" />
+          <jdoc:include type="modules" name="top" style="joomberui" />
         </section>
       </div>
     </div>  
@@ -84,7 +84,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
       <div class="wrapper">  
         <section class="row">
           <!--aboverow-->
-          <jdoc:include type="modules" name="above" style="siegeEngine" />
+          <jdoc:include type="modules" name="above" style="joomberui" />
         </section>
       </div>
     </div>
@@ -95,7 +95,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
     <?php if ($this->countModules( 'left' )) : ?>
       <section class="<?php echo $leftWidth ?> columns sidebar">
         <!--left-row-->
-        <jdoc:include type="modules" name="left" style="siegeEngine" />
+        <jdoc:include type="modules" name="left" style="joomberui" />
       </section>
     <?php endif; ?>
       <div class="<?php echo $mainwidth ?> columns">
@@ -103,7 +103,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
     <?php if ($this->countModules( 'above-content' )) : ?>
       <div class="above-content">
         <!--above-content-->
-          <jdoc:include type="modules" name="above-content" style="siegeEngine" />
+          <jdoc:include type="modules" name="above-content" style="joomberui" />
       </div>
     <?php endif; ?>            
 
@@ -122,14 +122,14 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
     <?php if ($this->countModules( 'below-content' )) : ?>
       <section class="below-content">
         <!--below-content-->
-        <jdoc:include type="modules" name="below-content" style="siegeEngine" />
+        <jdoc:include type="modules" name="below-content" style="joomberui" />
       </section>
     <?php endif; ?>
    		</div>
 		<?php if ($this->countModules( 'right' )) : ?>
       <section class="<?php echo $rightWidth ?> columns sidebar">
         <!--right-row-->
-          <jdoc:include type="modules" name="right" style="siegeEngine" />
+          <jdoc:include type="modules" name="right" style="joomberui" />
       </section>
     <?php endif; ?>
       </div>
@@ -139,7 +139,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
         <div class="wrapper">
           <section class="row">
             <!--belowrow-->
-            <jdoc:include type="modules" name="below" style="siegeEngine" />
+            <jdoc:include type="modules" name="below" style="joomberui" />
           </section>
         </div>
       </div>
@@ -150,7 +150,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
         <div class="wrapper">
           <section class="row">
             <!--bottomrow-->
-            <jdoc:include type="modules" name="bottom" style="siegeEngine" />
+            <jdoc:include type="modules" name="bottom" style="joomberui" />
           </section>
         </div>
       </div>
@@ -161,7 +161,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
         <div class="wrapper">
           <footer class="row">
               <!--footerrow-->
-              <jdoc:include type="modules" name="footer" style="siegeEngine" />
+              <jdoc:include type="modules" name="footer" style="joomberui" />
           </footer>
         </div>
       </div>
@@ -204,12 +204,16 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
               '.js><\/script>')
               </script>
           <?php else : ?>
-          <script src=<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.js></script>
+          <script src=<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/vendor/jquery-2.1.0.min.js></script>
           <?php endif; ?>
   <?php endif; ?>
 
   <?php if ($noConflict == 0) :?>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation.min.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.topbar.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.orbit.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.tab.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.accordion.js"></script>
     <script>
     	$(document).foundation();
   	</script>

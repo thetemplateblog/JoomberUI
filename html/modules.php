@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 /*
  * siegeEngine (chosen html5 tag and font headder tags)
  */
-function modChrome_siegeEngine($module, &$params, &$attribs)
+function modChrome_joomberui($module, &$params, &$attribs)
 {
 	$moduleTag      = $params->get('module_tag', 'div');
 	$headerTag      = htmlspecialchars($params->get('header_tag', 'h3'));

@@ -9,16 +9,31 @@
 
 defined('_JEXEC') or die;
 ?>
+
 <div class="<?php echo $moduleclass_sfx; ?>">
-    <div class="section-container vertical-tabs" data-section="vertical-tabs">
-        <?php foreach ($list as $item) :  ?>
-          <section>
-            <p class="title" data-section-title><a href="#"><?php echo $item->title; ?></a></p>
-            <div class="content" data-section-content>
-              <?php echo $item->introtext; ?>
-              <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
-            </div>
-          </section>
-        <?php endforeach; ?>
-    </div>
+  <dl class="tabs vertical" data-tab>
+    <?php $first = true; ?>
+    <?php foreach ($list as $item) :  ?>
+      <?php if ( $first ) { ?>
+        <dd class="active"><a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a></dd>
+      <?php $first = false; } else { ?>
+        <dd><a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a></dd>
+      <?php } ?>
+    <?php endforeach; ?>
+  </dl>
+  <div class="tabs-content vertical">
+    <?php $first = true; ?>
+    <?php foreach ($list as $item) :  ?>
+      <?php if ( $first ) { ?>
+        <div class="content active" id="<?php echo $item->title; ?>">
+          <?php $first = false; } else { ?>
+        <div class="content" id="<?php echo $item->title; ?>">
+          <?php } ?>
+        <h4><?php echo $item->title; ?></h4>
+        <?php echo $item->introtext; ?>
+        <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
+      </div>
+    <?php endforeach; ?>
+  </div>
 </div>
+

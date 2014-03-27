@@ -10,15 +10,28 @@
 defined('_JEXEC') or die;
 ?>
 <div class="<?php echo $moduleclass_sfx; ?>">
-    <div class="section-container accordion" data-section="accordion">
+  <dl class="accordion" data-accordion>
+    <?php $first = true; ?>
     <?php foreach ($list as $item) :  ?>
-      <section>
-        <p class="title" data-section-title><a href="#"><?php echo $item->title; ?></a></p>
-        <div class="content" data-section-content>
-          <?php echo $item->introtext; ?>
-          <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
-        </div>
-      </section>
+      <?php if ( $first ) { ?>
+        <dd>
+          <a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a>
+            <div id="<?php echo $item->title; ?>" class="content active">
+              <h4><?php echo $item->title; ?></h4>
+              <?php echo $item->introtext; ?>
+              <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
+          </div>
+        </dd>  
+      <?php $first = false; } else { ?>
+        <dd>
+          <a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a>
+            <div id="<?php echo $item->title; ?>" class="content">
+              <h4><?php echo $item->title; ?></h4>
+              <?php echo $item->introtext; ?>
+              <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
+          </div>
+        </dd> 
+      <?php } ?>
     <?php endforeach; ?>
-    </div>
+  </dl>
 </div>
