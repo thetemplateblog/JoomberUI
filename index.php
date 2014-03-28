@@ -196,19 +196,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
   </footer>
   <!-- end of credit row -->
   
-    <?php if ($jQueryOff == 0) : ?>
-		<?php if ($jQuery == 1) : ?>
-            <script>
-              document.write('<script src=<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/' +
-              ('__proto__' in {} ? 'zepto' : 'jquery') +
-              '.js><\/script>')
-              </script>
-          <?php else : ?>
-          <script src=<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/vendor/jquery-2.1.0.min.js></script>
-          <?php endif; ?>
-  <?php endif; ?>
-
-  <?php if ($noConflict == 0) :?>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/vendor/jquery-2.1.0.min.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.topbar.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/foundation.orbit.js"></script>
@@ -218,13 +206,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
     	$(document).foundation();
   	</script>
   
-  <?php else : ?>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation.se.js"></script>
-  	<script>
-    	jQuery(document).foundation();
-  	</script>
-  <?php endif; ?>
-  
+
     <!-- Load respond.js for shit browsers -->
   
   <!--[if lte IE 8]>  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/respond.js"></script> <![endif]-->
