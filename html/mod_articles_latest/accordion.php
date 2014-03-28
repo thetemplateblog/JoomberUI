@@ -27,7 +27,6 @@ defined('_JEXEC') or die;
         <dd>
           <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
             <div id="<?php echo $title; ?>" class="content">
-              <h4><?php echo $item->title; ?></h4>
               <?php echo $item->introtext; ?>
               <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
           </div>
