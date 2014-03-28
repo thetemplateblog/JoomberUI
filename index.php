@@ -47,10 +47,10 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
         </style>
     <?php endif; ?>
 </head>
-<body class="<?php echo $active->alias; ?> ">
+<body class="<?php echo $active->alias; ?>">
 	<?php if ($this->countModules( 'nav' )) : ?>
 	<?php if ($stickyTopMenu == 1) : ?><div class="fixed"><?php endif; ?>
-	  <div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); ?>">
+	<div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); if ($stickyTopMenu) :  echo" fixed"; endif; ?>">
 	    <nav class="top-bar" data-topbar>
 	        <ul class="title-area">
 	          <li class="name">
@@ -65,7 +65,6 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	      </section>
 	    </nav>
 	  </div>
-	<?php if ($stickyTopMenu == 1) : ?></div><?php endif; ?>
 	<?php endif; ?>
 	
 	<?php if ($this->countModules( 'top' )) : ?>
