@@ -30,7 +30,6 @@ defined('_JEXEC') or die;
           <?php $first = false; } else { ?>
         <div class="content" id="<?php echo $title; ?>">
           <?php } ?>
-        <h4><?php echo $item->title; ?></h4>
         <?php echo $item->introtext; ?>
         <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
       </div>
