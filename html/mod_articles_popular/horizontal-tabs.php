@@ -18,7 +18,6 @@
 /* ===================================================================== */
 defined('_JEXEC') or die;
 ?>
-
 <div class="<?php echo $moduleclass_sfx; ?>">
   <dl class="tabs" data-tab>
     <?php $first = true; ?>
