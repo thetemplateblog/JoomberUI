@@ -13,20 +13,22 @@ defined('_JEXEC') or die;
   <dl class="tabs vertical" data-tab>
     <?php $first = true; ?>
     <?php foreach ($list as $item) :  ?>
+    <?php $title = preg_replace('/\s+/', '', $item->title); ?>
       <?php if ( $first ) { ?>
-        <dd class="active"><a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a></dd>
+        <dd class="active"><a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a></dd>
       <?php $first = false; } else { ?>
-        <dd><a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a></dd>
+        <dd><a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a></dd>
       <?php } ?>
     <?php endforeach; ?>
   </dl>
   <div class="tabs-content vertical">
     <?php $first = true; ?>
     <?php foreach ($list as $item) :  ?>
+    <?php $title = preg_replace('/\s+/', '', $item->title); ?>
       <?php if ( $first ) { ?>
-        <div class="content active" id="<?php echo $item->title; ?>">
+        <div class="content active" id="<?php echo $title; ?>">
           <?php $first = false; } else { ?>
-        <div class="content" id="<?php echo $item->title; ?>">
+        <div class="content" id="<?php echo $title; ?>">
           <?php } ?>
         <h4><?php echo $item->title; ?></h4>
         <?php echo $item->introtext; ?>
@@ -35,4 +37,3 @@ defined('_JEXEC') or die;
     <?php endforeach; ?>
   </div>
 </div>
-
