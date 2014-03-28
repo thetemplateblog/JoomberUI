@@ -16,14 +16,11 @@ Credits: Code taken from the following:
 $loadMoo 		          = $this->params->get('loadMoo');
 $setGeneratorTag	    = $this->params->get('setGeneratorTag');
 $analytics 		        = $this->params->get('analytics');
-$jQuery			          = $this->params->get('jQuery');
-$jQueryOff		        = $this->params->get('jQueryOff');
 $customCSS    		    = $this->params->get('customCSS');
-$defaultWidth   	     = '1024';
+$defaultWidth   	     = '';
 $setWidth    		       = $this->params->get('setWidth');
 $widthUnit 		         = $this->params->get('widthUnit');
 $topbarTitle		       = $this->params->get('topbarTitle');
-$noConflict		         = $this->params->get('noConflict');
 $stickyTopMenu		     = $this->params->get('stickyTopMenu');
 $googleplus            = $this->params->get('googleplus');
 $googleWebFonts        = $this->params->get('googleWebFonts');
@@ -106,9 +103,9 @@ $footer = (int) ($this->countModules('footer') > 0);
 // GPL code taken from Construct template framework by Matt Thomas http://construct-framework.com/
 
 // To enable use of site configuration
-$app 					= JFactory::getApplication();
-$pageParams   = $app->getParams();
-$sitename     = $app->getCfg('sitename');
+$app 		= JFactory::getApplication();
+$pageParams  	= $app->getParams();
+$sitename	= $app->getCfg('sitename');
 // Returns a reference to the global document object
 $doc = JFactory::getDocument();
 
