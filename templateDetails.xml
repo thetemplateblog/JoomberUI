@@ -78,7 +78,7 @@
 					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
 					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
 					<field name="topbarTitle" type="text" default="joomberui" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
-					<field name="customCSS" type="filelist" default="customize.css" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomberui/css/" filter="" exclude="foundation\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
+					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomberui/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
 					<field name="rightwidth" type="dropdown" class="btn-group" default="4" label="TPL_SETTINGS_RIGHTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15">
 						<option value="1">1</option>
 						<option value="2">2</option>
