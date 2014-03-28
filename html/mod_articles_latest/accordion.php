@@ -13,10 +13,11 @@ defined('_JEXEC') or die;
   <dl class="accordion" data-accordion>
     <?php $first = true; ?>
     <?php foreach ($list as $item) :  ?>
+    <?php $title = preg_replace('/\s+/', '', $item->title); ?>
       <?php if ( $first ) { ?>
         <dd>
-          <a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a>
-            <div id="<?php echo $item->title; ?>" class="content active">
+          <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
+            <div id="<?php echo $title; ?>" class="content active">
               <h4><?php echo $item->title; ?></h4>
               <?php echo $item->introtext; ?>
               <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
@@ -24,8 +25,8 @@ defined('_JEXEC') or die;
         </dd>  
       <?php $first = false; } else { ?>
         <dd>
-          <a href="#<?php echo $item->title; ?>"><?php echo $item->title; ?></a>
-            <div id="<?php echo $item->title; ?>" class="content">
+          <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
+            <div id="<?php echo $title; ?>" class="content">
               <h4><?php echo $item->title; ?></h4>
               <?php echo $item->introtext; ?>
               <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
