@@ -51,7 +51,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	<?php if ($this->countModules( 'nav' )) : ?>
 	<?php if ($stickyTopMenu == 1) : ?><div class="fixed"><?php endif; ?>
 	  <div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); ?>">
-	    <nav class="top-bar">
+	    <nav class="top-bar data-topbar">
 	        <ul class="title-area">
 	          <li class="name">
 	            <h1><a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($topbarTitle);?>"><?php echo htmlspecialchars($topbarTitle);?></a></h1>
