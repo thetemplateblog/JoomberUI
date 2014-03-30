@@ -52,46 +52,9 @@ if ($this->countModules('left') == 0)  {$leftwidth = 0;} else {$leftwidth = (int
 $colcount = $rightwidth + $leftwidth;
 $coltotal = 12 - $colcount;
 
-if ($coltotal == 1) { $mainwidth = 'large-1'; }
-if ($coltotal == 2) { $mainwidth = 'large-2'; }
-if ($coltotal == 3) { $mainwidth = 'large-3'; }
-if ($coltotal == 4) { $mainwidth = 'large-4'; }
-if ($coltotal == 5) { $mainwidth = 'large-5'; }
-if ($coltotal == 6) { $mainwidth = 'large-6'; }
-if ($coltotal == 7) { $mainwidth = 'large-7'; }
-if ($coltotal == 8) { $mainwidth = 'large-8'; }
-if ($coltotal == 9) { $mainwidth = 'large-9'; }
-if ($coltotal == 10) { $mainwidth = 'large-10'; }
-if ($coltotal == 11) { $mainwidth = 'large-11'; }
-if ($coltotal == 12) { $mainwidth = 'large-12'; }
-
-if ($rightwidth == 1) { $rightWidth = 'large-1'; }
-if ($rightwidth == 2) { $rightWidth = 'large-2'; }
-if ($rightwidth == 3) { $rightWidth = 'large-3'; }
-if ($rightwidth == 4) { $rightWidth = 'large-4'; }
-if ($rightwidth == 5) { $rightWidth = 'large-5'; }
-if ($rightwidth == 6) { $rightWidth = 'large-6'; }
-if ($rightwidth == 7) { $rightWidth = 'large-7'; }
-if ($rightwidth == 8) { $rightWidth = 'large-8'; }
-if ($rightwidth == 9) { $rightWidth = 'large-9'; }
-if ($rightwidth == 10) { $rightWidth = 'large-10'; }
-if ($rightwidth == 11) { $rightWidth = 'large-11'; }
-if ($rightwidth == 12) { $rightWidth = 'large-12'; }
-
-if ($leftwidth == 1) { $leftWidth = 'large-1'; }
-if ($leftwidth == 2) { $leftWidth = 'large-2'; }
-if ($leftwidth == 3) { $leftWidth = 'large-3'; }
-if ($leftwidth == 4) { $leftWidth = 'large-4'; }
-if ($leftwidth == 5) { $leftWidth = 'large-5'; }
-if ($leftwidth == 6) { $leftWidth = 'large-6'; }
-if ($leftwidth == 7) { $leftWidth = 'large-7'; }
-if ($leftwidth == 8) { $leftWidth = 'large-8'; }
-if ($leftwidth == 9) { $leftWidth = 'large-9'; }
-if ($leftwidth == 10) { $leftWidth = 'large-10'; }
-if ($leftwidth == 11) { $leftWidth = 'large-11'; }
-if ($leftwidth == 12) { $leftWidth = 'large-12'; }
-
-
+$mainwidth = 'large-'.$coltotal;
+$rightWidth = 'large-'.$rightwidth;
+$leftWidth = 'large-'.$leftwidth;
 
 // Modules
 $header = (int) ($this->countModules('header') > 0);
