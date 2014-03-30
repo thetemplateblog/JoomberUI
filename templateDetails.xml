@@ -60,7 +60,7 @@
 					<option value="1">TPL_SETTINGS_STICKYTOPMENU_YES</option>
 					<option value="0">TPL_SETTINGS_STICKYTOPMENU_NO</option>
 				</field>
-				<field name="TopMenuWidth" type="radio" class="btn-group" default="0" label="Sticky Top Menu?" description="Make the top menu wide or contain-to-grid?">
+				<field name="TopMenuWidth" type="radio" class="btn-group" default="0" label="Top Menu Width" description="Make the top menu wide or contain-to-grid?">
 				<option value="1">TPL_SETTINGS_CONTAIN_TO_GRID_TOPMENU</option>
 				<option value="0">TPL_SETTINGS_ROW_TOPMENU</option>
 				</field>	
