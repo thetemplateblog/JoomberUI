@@ -34,7 +34,14 @@ $googleplus            = $this->params->get('googleplus');
 $googleplusLink        = $this->params->get('googleplusLink');
 $github                = $this->params->get('github');
 $githubLink            = $this->params->get('githubLink');
+$TopMenuWidth          = $this->params->get('TopMenuWidth');
 $active                = JFactory::getApplication()->getMenu()->getActive();
+
+$topmenu = ($stickyTopMenu?1:0)+ ($TopMenuWidth?1:0);
+$fixed = "";
+$ctg = "";
+if ( $stickyTopMenu == 1 ) { $fixed = "fixed"; }
+if ( $TopMenuWidth == 1 ) { $ctg = "contain-to-grid"; }
 
 // Do we have social links?
 $social                = ($twitterLink?1:0)+ ($dribbbleLink?1:0)+ ($facebookLink?1:0)+ ($googleplusLink?1:0)+ ($githubLink?1:0);
