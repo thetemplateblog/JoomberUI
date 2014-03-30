@@ -49,8 +49,8 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 </head>
 <body class="<?php echo $active->alias; ?>">
 	<?php if ($this->countModules( 'nav' )) : ?>
-	<div class="<?php echo $suffix = getParam('nav', 'moduleclass_sfx'); if ($stickyTopMenu) :  echo" fixed"; endif; ?>">
-	    <nav class="top-bar" data-topbar>
+  	<?php if ($topmenu > 0) : echo "<div class=\"$ctg $fixed\">"; endif; ?>
+	    <nav class="top-bar <?php if ($TopMenuWidth == 0) { echo "row"; } ?>" data-topbar>
 	        <ul class="title-area">
 	          <li class="name">
 	            <h1><a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($topbarTitle);?>"><?php echo htmlspecialchars($topbarTitle);?></a></h1>
@@ -64,6 +64,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	      </section>
 	    </nav>
 	  </div>
+    <?php if ($topmenu > 0) : echo "</div>"; endif; ?>
 	<?php endif; ?>
 	
 	<?php if ($this->countModules( 'top' )) : ?>
