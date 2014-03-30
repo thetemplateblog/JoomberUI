@@ -60,7 +60,10 @@
 					<option value="1">TPL_SETTINGS_STICKYTOPMENU_YES</option>
 					<option value="0">TPL_SETTINGS_STICKYTOPMENU_NO</option>
 				</field>
-				<field type="spacer" default=" " />	
+				<field name="TopMenuWidth" type="radio" class="btn-group" default="0" label="Sticky Top Menu?" description="Make the top menu wide or contain-to-grid?">
+				<option value="1">TPL_SETTINGS_CONTAIN_TO_GRID_TOPMENU</option>
+				<option value="0">TPL_SETTINGS_ROW_TOPMENU</option>
+				</field>	
 				<field type="spacer" default=" " />
 					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
 					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
