@@ -103,6 +103,7 @@ $left = (int) ($this->countModules('left') > 0);
 $right = (int) ($this->countModules('right') > 0);
 $belowcontent = (int) ($this->countModules('below-content') > 0);
 $below = (int) ($this->countModules('below') > 0);
+$bottom = (int) ($this->countModules('bottom') > 0);
 $footer = (int) ($this->countModules('footer') > 0);
 
 
@@ -134,17 +135,4 @@ if ( !$loadMoo ) {
 }
 
 #-------------End Construct Code--------------------------------------#
-jimport( 'joomla.application.module.helper' );
 
-function getParam( $module, $attribs ) {
-  $modules = JModuleHelper::getModules( $module );
-  $params = json_decode($modules[0]->params);
-  $param = $params->$attribs;
-    if (strpos($param,'contain-to-grid') !== false) {
-    $param = 'contain-to-grid';
-    }
-    else {
-      $param = 'row';
-    }
-  return $param;
-  }
