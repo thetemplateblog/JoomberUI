@@ -25,7 +25,7 @@ defined('_JEXEC') or die;
     <?php $title = preg_replace('/\s+/', '', $item->title); ?>
         <dd>
           <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
-            <div id="<?php echo $title; ?>" class="content <?php if ( $first ) : echo "class=\"active\""; $first = false; endif; ?>">
+            <div id="<?php echo $title; ?>" class="content <?php if ( $first ) : echo "active"; $first = false; endif; ?>">
               <?php echo $item->introtext; ?>
               <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
           </div>
