@@ -20,25 +20,13 @@ defined('_JEXEC') or die;
 ?>
 <div class="<?php echo $moduleclass_sfx; ?>">
   <dl class="tabs" data-tab>
-    <?php $first = true; ?>
-    <?php foreach ($list as $item) :  ?>
-    <?php $title = preg_replace('/\s+/', '', $item->title); ?>
-      <?php if ( $first ) { ?>
-        <dd class="active"><a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a></dd>
-      <?php $first = false; } else { ?>
-        <dd><a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a></dd>
-      <?php } ?>
-    <?php endforeach; ?>
+    <?php $first = true; foreach ($list as $item) : $title = preg_replace('/\s+/', '', $item->title); ?>
+        <dd <?php if ( $first ) : echo "class=\"active\""; $first = false; endif; ?>><a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a></dd>
+        <?php endforeach; ?>
   </dl>
-  <div class="tabs-content">
-    <?php $first = true; ?>
-    <?php foreach ($list as $item) :  ?>
-    <?php $title = preg_replace('/\s+/', '', $item->title); ?>
-      <?php if ( $first ) { ?>
-        <div class="content active" id="<?php echo $title; ?>">
-          <?php $first = false; } else { ?>
-        <div class="content" id="<?php echo $title; ?>">
-          <?php } ?>
+  <div class="tabs-content vertical">
+    <?php $first = true; foreach ($list as $item) : $title = preg_replace('/\s+/', '', $item->title); ?>
+        <div class="content <?php if ( $first ) : echo "active"; $first = false; endif; ?>" id="<?php echo $title; ?>">
         <?php echo $item->introtext; ?>
         <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
       </div>
