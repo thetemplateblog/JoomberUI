@@ -23,23 +23,15 @@ defined('_JEXEC') or die;
     <?php $first = true; ?>
     <?php foreach ($list as $item) :  ?>
     <?php $title = preg_replace('/\s+/', '', $item->title); ?>
-      <?php if ( $first ) { ?>
         <dd>
           <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
-            <div id="<?php echo $title; ?>" class="content active">
+            <div id="<?php echo $title; ?>" class="content <?php if ( $first ) : echo "class=\"active\""; $first = false; endif; ?>">
               <?php echo $item->introtext; ?>
               <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
           </div>
         </dd>  
-      <?php $first = false; } else { ?>
-        <dd>
-          <a href="#<?php echo $title; ?>"><?php echo $item->title; ?></a>
-            <div id="<?php echo $title; ?>" class="content">
-              <?php echo $item->introtext; ?>
-              <a href="<?php echo $item->link; ?>" class="button small radius info">Read more</a>
-          </div>
-        </dd> 
-      <?php } ?>
+
     <?php endforeach; ?>
   </dl>
 </div>
+
