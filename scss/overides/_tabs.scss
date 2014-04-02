@@ -1,0 +1,31 @@
+.tabs.vertical{  
+		
+  	dd { margin-bottom: 5px!important;
+  	
+  
+  		> a { 	@include radius;
+	  			border: 1px solid #e5e5e5;
+
+  			}
+  	
+  		}
+  dd.active{ 	margin-right: -10px;  
+        
+        		a { border-right: 1px solid white; }    
+
+            }  
+      }
+
+    .tabs-content.vertical {
+
+      > .content {
+
+        &.active { 	border-left: 1px solid #e5e5e5; margin-left: 10px;}
+        
+        &.contained {  }
+      }
+      &.vertical {
+        
+        > .content {  }
+      }
+    }
