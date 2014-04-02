@@ -5948,7 +5948,7 @@ meta.foundation-mq-topbar {
   background: #333333;
 }
 .contain-to-grid .top-bar {
-  margin-bottom: 1.875em;
+  margin-bottom: 0;
 }
 
 .fixed {
@@ -5980,7 +5980,7 @@ meta.foundation-mq-topbar {
   line-height: 45px;
   position: relative;
   background: #333333;
-  margin-bottom: 1.875em;
+  margin-bottom: 0;
 }
 .top-bar ul {
   margin-bottom: 0;
@@ -6277,7 +6277,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
     margin: 0 auto;
-    margin-bottom: 1.875em;
+    margin-bottom: 0;
   }
 
   .top-bar-section {
@@ -7965,4 +7965,24 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important;
+}
+
+.tabs.vertical dd {
+  margin-bottom: 5px !important;
+}
+.tabs.vertical dd > a {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+.tabs.vertical dd.active {
+  margin-right: -10px;
+}
+.tabs.vertical dd.active a {
+  border-right: 1px solid white;
+}
+
+.tabs-content.vertical > .content.active {
+  border-left: 1px solid #e5e5e5;
+  margin-left: 10px;
 }
