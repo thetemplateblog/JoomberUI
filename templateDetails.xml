@@ -41,10 +41,12 @@
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_joomberui.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_joomberui.sys.ini</language>
-    <language tag="de-DE">de-DE/de-DE.tpl_joomberui.ini</language>
-    <language tag="de-DE">de-DE/de-DE.tpl_joomberui.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_joomberui.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_joomberui.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_joomberui.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_joomberui.sys.ini</language>
 	</languages>
-
+	
 	<config>
 		<fields name="params">
 			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/joomberui/" >
