@@ -8,8 +8,8 @@
 <p>As always, Foundation is untouched, so you can update it to your heart's content as Zurb release updates. All of the Joomla specific styling is located in our joomla.css file so you always know where to look.</p>
 
 <p>You can see a little DEMO of some of the very basics of what the template can do. NOTE: There are NO extensions added to any of the below sites. <br><br>
-<a href="http://small-business.joomber.com/" alt="Foundation5 for Joomla3" title="JoomberUI - Foundation5 template for Joomla ">Small-Business NOTE: These demos haven been taken offline for the time being</a><br> 
-<a href="http://modern-business.joomber.com/" alt="Foundation5 for Joomla3" title="JoomberUI - Foundation5 template for Joomla">Modern-Business  NOTE: These demos haven been taken offline for the time being</a>
+<a href="http://small-business.joomber.com/" alt="Foundation5 for Joomla3" title="JoomberUI - Foundation5 template for Joomla ">Small-Business</a><br>  NOTE: These demos haven been taken offline for the time being
+<a href="http://modern-business.joomber.com/" alt="Foundation5 for Joomla3" title="JoomberUI - Foundation5 template for Joomla">Modern-Business</a> NOTE: These demos haven been taken offline for the time being
 <!-- <p>For more info, some basic documentation and a working demo, head over to <strong><a href="http://joomberui.joomber.com/" alt="Foundation4 for Joomla3" title="JoomberUI - Foundation4 template for Joomla">http://joomberui.joomber.com//</a><strong></p> -->
 
 <hr/>
