@@ -45,6 +45,8 @@
 		<language tag="de-DE">de-DE/de-DE.tpl_joomberui.sys.ini</language>
 		<language tag="fr-FR">fr-FR/fr-FR.tpl_joomberui.ini</language>
 		<language tag="fr-FR">fr-FR/fr-FR.tpl_joomberui.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_joomberui.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_joomberui.sys.ini</language>
 	</languages>
 	
 	<config>
